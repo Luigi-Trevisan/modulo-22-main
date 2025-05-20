@@ -4,11 +4,15 @@
   "description": "Exemplo de PageObjects",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec 'cypress/e2e/appActionsTest.cy.js,cypress/e2e/pageObjectsTest.cy.js'"
+    "test": "npx cypress run --spec 'cypress/e2e/appActionsTest.cy.js,cypress/e2e/pageObjectsTest.cy.js'",
+      "test:report": "jest --coverage && jest --reporters=jest-html-reporter"
   },
   "author": "ernestosbarbosa",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.3"
+  },
+  "devDependencies": {
+    "jest-html-reporter": "^4.1.0"
   }
 }
